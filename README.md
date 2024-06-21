@@ -28,7 +28,7 @@ Before running this project locally, make sure you have the following installed:
 
    ```bash
    git clone https://github.com/lazarpetrovicc/Todo-App.git
-   cd Todo-App
+   cd Todo-App/API
    ```
 
 2. Install dependencies:
@@ -45,7 +45,7 @@ Before running this project locally, make sure you have the following installed:
 4. Build and run the project:
 
    ```bash
-   go run main.go
+   go run .
    ```
 
 ## API Endpoints

@@ -28,7 +28,7 @@ Before running this project locally, make sure you have the following installed:
 
    ```bash
    git clone https://github.com/lazarpetrovicc/Todo-App.git
-   cd TODO-APP
+   cd Todo-App
    ```
 
 2. Install dependencies:

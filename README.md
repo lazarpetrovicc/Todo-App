@@ -15,6 +15,25 @@ TODO-APP is a simple HTTP API built with Go that integrates with MongoDB to mana
 - **MongoDB** - Database used to store todo items.
 - **MongoDB Go Driver** - Official MongoDB driver for Go.
 
+## Dependencies
+
+The project relies on the following dependencies:
+
+- `github.com/golang/snappy`
+- `github.com/klauspost/compress`
+- `github.com/montanaflynn/stats`
+- `github.com/xdg-go/pbkdf2`
+- `github.com/xdg-go/scram`
+- `github.com/xdg-go/stringprep`
+- `github.com/youmark/pkcs8`
+- `golang.org/x/crypto`
+- `golang.org/x/sync`
+- `golang.org/x/text`
+
+## Core Technologies and Libraries
+
+The project leverages Go's standard library for core functionalities like HTTP handling, logging, context management, and JSON processing. It uses the MongoDB Go driver for efficient interaction with MongoDB, ensuring robust database operations. Synchronization primitives from the sync package are employed to manage concurrent access to shared resources.
+
 ## Prerequisites
 
 Before running this project locally, make sure you have the following installed:
@@ -28,7 +47,7 @@ Before running this project locally, make sure you have the following installed:
 
    ```bash
    git clone https://github.com/lazarpetrovicc/Todo-App.git
-   cd TODO-APP
+   cd Todo-App/API
    ```
 
 2. Install dependencies:
@@ -45,7 +64,7 @@ Before running this project locally, make sure you have the following installed:
 4. Build and run the project:
 
    ```bash
-   go run main.go
+   go run .
    ```
 
 ## API Endpoints

@@ -67,6 +67,17 @@ Before running this project locally, make sure you have the following installed:
    go run .
    ```
 
+## GitHub Actions Workflow
+
+To ensure continuous integration and maintain code quality, the project uses GitHub Actions. A workflow is configured to run on every push or pull request to the `main` branch. The workflow includes:
+
+- **Checkout Code**: Retrieves the latest code from the repository.
+- **Set up Go**: Sets up the Go environment using version 1.22.3.
+- **Cache Dependencies**: Caches Go module dependencies to speed up the build process.
+- **Build Project**: Builds the Go project located in the `API` directory.
+
+The workflow file is located at `.github/workflows/todo-app-build.yml`.
+
 ## API Endpoints
 
 ### Get All Todos

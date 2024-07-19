@@ -25,10 +25,10 @@ jobs:
         uses: actions/cache@v3
         with:
           path: ~/go/pkg/mod
-          key: ${{ runner.os }}-go-${{ hashFiles('backend/go.mod') }}
+          key: ${{ runner.os }}-go-${{ hashFiles('API/go.mod') }}
           restore-keys: |
             ${{ runner.os }}-go-
 
       - name: Build Todo-App Go API
-        working-directory: backend
+        working-directory: API
         run: go build -v .
